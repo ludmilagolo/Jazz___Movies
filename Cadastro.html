@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Jazz & Movies</title>
+    <link href="css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/Index.css" rel="stylesheet" type="text/css" />
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+
+    <aside id="menu">
+        <ul>
+            <li><a href="Index.html">Jazz & Movies</a></li>
+            <li>
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">História do blues ao jazz</a><i class="far fa-plus-square"></i>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li><a href="#">&ensp; Origem do jazz</a></li>
+                    <li><a href="#">&ensp; Curiosidades sobre o jazz</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Cinema e Jazz</a></li>
+            <li><a href="#">Jazz no cinema atual</a></li>
+            <li><a href="#">A Pricesa e o Sapo</a></li>
+            <li><a href="#">O Grande Gatsby</a></li>
+            <li><a href="#">Whiplash</a></li>
+            <li><a href="#">La La Land</a></li>
+            <li><a href="#">Crítica Final</a></li>
+            <li><a href="Cadastro.html">Cadastro</a></li>
+        </ul>
+    </aside>
+
+    <div class="container body-content">
+        <section>
+            <article>
+                <h1>Cadastre seu e-mail</h1>
+                <p>e receba novidades sobre Jazz no cinema.</p>
+
+                <label for="NomeCompleto">Nome*</label>
+                <input class="form-control" placeholder="Nome Completo" id="NomeCompleto" name="NomeCompleto" value="" type="text">
+                <span class="field-validation-valid text-danger" data-valmsg-for="NomeCompleto" data-valmsg-replace="true"></span>
+                <br/>
+
+                <label for="Email">E-mail*</label>
+                <input class="form-control" placeholder="E-mail" id="Email" name="Email" value="" type="text">
+                <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                <br />
+
+                <label for="Idade">Idade</label>
+                <input class="form-control" placeholder="Idade" data-val="true" data-val-number="The field Idade must be a number." data-val-required="O campo Idade é obrigatório." id="Idade" name="Idade" value="" type="text">
+                <span class="field-validation-valid text-danger" data-valmsg-for="Idade" data-valmsg-replace="true"></span>
+                <br />
+
+                <label for="Estados">Estados</label>
+                <select class="form-control" data-val="true" data-val-required="O campo Estados é obrigatório." id="Estados" name="Estados">
+                    <option selected="selected" value="0">Selecione um Estado</option>
+                    <option value="1">AC</option>
+                    <option value="2">AL</option>
+                    <option value="3">AP</option>
+                    <option value="4">AM</option>
+                    <option value="5">BA</option>
+                    <option value="6">CE</option>
+                    <option value="7">DF</option>
+                    <option value="8">ES</option>
+                    <option value="9">GO</option>
+                    <option value="10">MA</option>
+                    <option value="11">MT</option>
+                    <option value="12">MS</option>
+                    <option value="13">MG</option>
+                    <option value="14">PA</option>
+                    <option value="15">PB</option>
+                    <option value="16">PR</option>
+                    <option value="17">PE</option>
+                    <option value="18">PI</option>
+                    <option value="19">RJ</option>
+                    <option value="20">RN</option>
+                    <option value="21">RS</option>
+                    <option value="22">RO</option>
+                    <option value="23">RR</option>
+                    <option value="24">SC</option>
+                    <option value="25">SP</option>
+                    <option value="26">SE</option>
+                    <option value="27">TO</option>
+                </select>
+                <br/>
+
+                <label for="Sexos">Sexo</label>
+                <div class="control-group">
+                           <label class="radio-inline">
+                               <input data-val="true" data-val-required="O campo Sexo é obrigatório." id="Sexos" name="Sexos" value="Feminino" type="radio"> Feminino
+                           </label>
+                           <label class="radio-inline">
+                               <input id="Sexos" name="Sexos" value="Masculino" type="radio"> Masculino
+                           </label>
+                       </div>
+                <br />
+
+                <div class="form-check">
+                    <input class="form-check-input" data-val="true" data-val-required="O campo Notificacao é obrigatório." id="notificacao" name="Notificacao" value="true" type="checkbox"><input name="Notificacao" value="false" type="hidden">
+                    <label class="form-check-label" for="notificacao">Desejo receber as novidades por e-mail</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" data-val="true" data-val-required="O campo Pesquisa é obrigatório." id="pesquisa" name="Pesquisa" value="true" type="checkbox"><input name="Pesquisa" value="false" type="hidden">
+                    <label class="form-check-label" for="pesquisa">Aceito enviar meus dados para fins de pesquisa</label>
+                </div>
+                <br />
+
+                <div class="form-group">
+                    <a class="btn btn-default" href="Index.html">Voltar</a>
+                    &nbsp;
+                    <input type="submit" value="Salvar" class="btn btn-default" id="botao" />
+                </div>
+                <br>
+
+                <p>* Campos obrigatórios</p>
+            </article>
+        </section>
+    </div>
+    <br />
+
+
+    <footer class="footer footer-default" role="contentinfo">
+        <div class="container">
+            <nav class="row">
+                <div class="col-md-2"></div>
+                <div class="col-xd-12 col-md-8">
+                    <p class="text-center" style="font-size:12px; color:white;"><b>CLÁUSULA DE RESERVA (Lei 9.610/98 - LEI DE DIREITOS AUTORAIS):</b></p>
+
+                    <p class="text-justify" style="font-size:10px; color:white;">Este site foi publicado e é mantido pelos discentes do 3º semestre, do Curso de Graduação em Design Digital, da Universidade Anhembi Morumbi, visando a atender às exigências da disciplina PROJETO INTERDISCIPLINAR: VISUALIZAÇÃO DE DADOS.
+                    Trata-se de uma publicação temporária para propósitos estritamente acadêmicos e sem fins lucrativos. Em atendimento às exigências da Lei 9.610/98, do parágrafo 4°, do Artigo 184, do Código Penal, os discentes responsáveis
+                    por esta publicação colocam-se à disposição, por intermédio do e-mail _____________, para dirimir quaisquer dúvidas referentes à eventual violação de direitos autorais, comprometendo - se desde já, a retirar do ar, qualquer texto,
+                    som ou imagem pertencente a autor ou titular que se sinta direta ou indiretamente prejudicado.</p>
+                </div>
+            </nav>
+        </div>
+    </footer>
+
+
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>

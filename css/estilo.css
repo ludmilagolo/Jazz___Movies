@@ -1,0 +1,132 @@
+/*
+  @author Ludmila Golo and Amanda Calcic
+  @version 0.1
+*/
+
+/*---------------- Padronização--------------------*/
+
+html {
+font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lato';
+    padding-top: 5%;
+    text-align: center;
+    overflow-x: hidden;
+}
+/* Set padding to keep content from hitting the edges */
+
+.body-content {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+
+/*---------------- Tipografia--------------------*/
+
+@font-face {
+  font-family: 'Limelight';
+  src: url('fonts/Limelight?#iefix') format('embedded-opentype')
+    url('fonts/Limelight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('fonts/Lato?#iefix') format('embedded-opentype'),
+    url('fonts/Lato.ttf') format('truetype');
+}
+/*---------------- Nav--------------------*/
+#menu {
+    width: 20%;
+    float: left;
+    background-color: black;
+    opacity: 0.60;
+    -moz-opacity: 0.65;
+}
+
+.menu-list {
+    list-style-type: none;
+    color: white;
+}
+/*---------------- Imgs--------------------*/
+
+.images-inline{
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+    vertical-align: top;
+    background: #C8C8C8;
+    padding: 24px 10px 10px;
+    text-align: left;
+    position: relative;
+    margin-right: 11px;
+    margin-bottom: 30px;
+}
+
+
+/*---------------- Text--------------------*/
+h1,h2,h3,h4{
+  font-family: 'Limelight';
+  text-align: center;
+}
+
+p{
+  font-family: 'Lato' sans-serif;
+}
+
+.principal-text{
+  text-align: center;
+}
+.section-style1 {
+    width: 83%;
+    float: right;
+}
+
+/*---------------- video--------------------*/
+#video {
+    width: 100%;
+    height: 350px;
+    background: #DCDCDC;
+    float: left;
+}
+
+
+/*---------------- Footer--------------------*/
+.footer-default {
+    background: #000;
+    background-color: rgb(0, 0, 0);
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto auto;
+}
+
+.footer {
+    padding: 80px 0 50px;
+    padding-top: 80px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    box-sizing: border-box;
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    font-size:10px;
+    color:white;
+}
+
+/*---------------- media query--------------------*/
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 950px) {
+
+}
