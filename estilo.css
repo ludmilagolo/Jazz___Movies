@@ -1,0 +1,183 @@
+/*
+  @author Ludmila Golo and Amanda Calcic
+  @version 0.1
+*/
+
+/*---------------- Padronização--------------------*/
+
+html {
+font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lato';
+    text-align: center;
+    overflow-x: hidden;
+    margin: 0;
+}
+/* Set padding to keep content from hitting the edges */
+
+
+/* Set width on the form input elements since they're 100% wide by default */
+
+/*---------------- Tipografia--------------------*/
+
+@font-face {
+  font-family: 'Limelight';
+  src: url('fonts/Limelight?#iefix') format('embedded-opentype')
+    url('fonts/Limelight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('fonts/Lato?#iefix') format('embedded-opentype'),
+    url('fonts/Lato.ttf') format('truetype');
+}
+/*---------------- Nav--------------------*/
+#menu {
+  width: 100%;
+  align-items: center;
+    display: table;
+    background-color: black;
+}
+
+.nav-item {
+    list-style-type: none;
+    color: white;
+    border: 1px solid #ffcc33;
+    border-radius: 10px;
+}
+.navbar-toggle{
+  float: left;
+  border: 2px solid #ffcc33;
+  margin: 2%;
+}
+.icon-bar{
+  border: 1px solid #ffcc33;
+}
+
+.busca-icon{
+  display: block;
+  height: 40px;
+  width: 20%;
+  background: transparent;
+  background-image: url("imgs/busca.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  float: right;
+  margin: 1%;
+}
+.busca-icon:focus{
+  border-radius: 10px;
+  border: 1px solid #ffcc33;
+}
+
+/*---------------- Capa -------------------*/
+.capa{
+  height: auto;
+  width: 100%;
+  margin: none;
+  background-image: url( 'imgs/back.png');
+  background-repeat:repeat-x;
+  background-size: contain;
+  background-attachment: fixed;
+}
+/*---------------- Imgs--------------------*/
+#logo{
+  float: left;
+  clear: right;
+  display: block;
+}
+.images-inline{
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+    vertical-align: top;
+    background: #C8C8C8;
+    padding: 24px 10px 10px;
+    text-align: left;
+    position: relative;
+    margin-right: 11px;
+    margin-bottom: 30px;
+}
+
+
+/*---------------- Text--------------------*/
+h1{
+  text-align: right;
+  color: white;
+  width: 60%;
+  height: 100%;
+  margin-top: 15%;
+}
+h2,h3,h4{
+  font-family: 'Limelight';
+  text-align: center;
+}
+
+p{
+  font-family: 'Lato' sans-serif;
+}
+
+.principal-text{
+  text-align: center;
+}
+.section-style1 {
+    width: 100%;
+}
+
+/*---------------- video--------------------*/
+#video {
+    width: 100%;
+    height: 350px;
+    background: #DCDCDC;
+    float: left;
+}
+
+
+/*---------------- Footer--------------------*/
+.footer-default {
+    background: #000;
+    background-color: rgb(0, 0, 0);
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto auto;
+}
+
+.footer {
+    padding: 80px 0 50px;
+    padding-top: 80px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    box-sizing: border-box;
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    font-size:10px;
+    color:white;
+}
+
+/*---------------- media query--------------------*/
+
+
+@media screen and (max-width: 480px) {
+  h1{
+    font-size: 1.6em;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 950px) {
+
+}
